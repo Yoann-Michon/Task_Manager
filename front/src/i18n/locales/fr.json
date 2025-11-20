@@ -1,0 +1,179 @@
+{
+  "navigation": {
+    "sidebar": {
+      "home": "Accueil",
+      "tasks": "Tâches",
+      "documentation": "Docs",
+      "settings": "Paramètres",
+      "Archive": "Archive"
+    },
+    "header": {
+      "tooltip": "Paramètres du compte",
+      "profile": "Profil",
+      "settings": "Paramètres",
+      "logout": "Déconnexion",
+      "login": "Connexion",
+      "register": "S'inscrire",
+      "account": "Compte"
+
+    }
+  },
+  "auth": {
+    "email": "Adresse e-mail",
+    "emailPlaceholder": "exemple@email.com",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "••••••••",
+    "login": {
+      "title": "Connexion",
+      "loginButton": "Se connecter",
+      "loggingIn": "Connexion...",
+      "rememberMe": "Se souvenir de moi",
+      "forgotPassword": "Mot de passe oublié ?",
+      "noAccount": "Pas encore de compte ?",
+      "loginError": "Erreur lors de la connexion",
+      "emailRequired": "L'e-mail est requis",
+      "invalidEmail": "Adresse e-mail invalide",
+      "passwordRequired": "Le mot de passe est requis",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "username": "Nom d'utilisateur",
+      "usernamePlaceholder": "Votre nom",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "Au moins 8 caractères",
+      "confirmPassword": "Confirmer le mot de passe",
+      "confirmPasswordPlaceholder": "Retapez votre mot de passe",
+      "registerButton": "S'inscrire",
+      "registering": "Inscription...",
+      "alreadyHaveAccount": "Vous avez déjà un compte ?",
+      "registerError": "Erreur lors de l'inscription",
+      "usernameRequired": "Le nom d'utilisateur est requis",
+      "usernameTooShort": "Le nom doit contenir au moins 3 caractères",
+      "usernameTooLong": "Le nom ne peut pas dépasser 30 caractères",
+      "usernameInvalid": "Le nom ne peut contenir que des lettres et chiffres",
+      "emailRequired": "L'e-mail est requis",
+      "invalidEmail": "Adresse e-mail invalide",
+      "passwordRequired": "Le mot de passe est requis",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 8 caractères",
+      "passwordWeak": "Le mot de passe doit contenir au moins une majuscule, une minuscule et un chiffre",
+      "confirmPasswordRequired": "Veuillez confirmer votre mot de passe",
+      "passwordMismatch": "Les mots de passe ne correspondent pas"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Mes tâches",
+      "subtitle": "tâche | tâches",
+      "newTask": "Nouvelle tâche"
+    },
+    "tasks": {
+      "columns": {
+        "todo": "À faire",
+        "inprogress": "En cours",
+        "done": "Terminé"
+      },
+      "status": {
+        "todo": "À faire",
+        "pending": "En cours",
+        "done": "Terminé"
+      },
+      "dates": {
+        "created": "Créée le",
+        "completed": "Terminée le"
+      },
+      "modal": {
+        "addTitle": "Nouvelle tâche",
+        "editTitle": "Modifier la tâche",
+        "titleLabel": "Titre de la tâche",
+        "titleRequired": "Le titre est requis",
+        "descriptionLabel": "Description (optionnel)",
+        "descriptionPlaceholder": "Ajoutez des détails sur cette tâche...",
+        "typeLabel": "Type de tâche"
+      },
+      "dragDrop": {
+        "noTasks": "Aucune tâche dans",
+        "dropTask": "Déposez la tâche ici",
+        "dropHere": "Déposer ici"
+      },
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette tâche ?",
+      "stats": {
+        "title": "Statistiques",
+        "total": "Total",
+        "todo": "À faire",
+        "pending": "En cours",
+        "done": "Terminées",
+        "completionRate": "Taux de complétion"
+      }
+    },
+    "settings": {
+      "title": "Paramètres",
+      "language": {
+        "title": "Langue",
+        "french": "Français",
+        "english": "Anglais",
+        "spanish": "Espagnol",
+        "german": "Allemand"
+      },
+      "theme": {
+        "title": "Thème",
+        "light": "Clair",
+        "dark": "Sombre"
+      },
+      "save": "Enregistrer",
+      "saved": "Paramètres enregistrés avec succès"
+    },
+    "profile": {
+      "title": "Mon profil",
+      "name": "Nom",
+      "email": "E-mail",
+      "role": "Rôle",
+      "changePassword": "Changer le mot de passe",
+      "currentPassword": "Mot de passe actuel",
+      "newPassword": "Nouveau mot de passe",
+      "confirmNewPassword": "Confirmer le nouveau mot de passe",
+      "updateProfile": "Mettre à jour le profil",
+      "profileUpdated": "Profil mis à jour avec succès",
+      "passwordChanged": "Mot de passe changé avec succès"
+    }
+  },
+  "common": {
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "add": "Ajouter",
+    "search": "Rechercher",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "success": "Succès",
+    "confirm": "Confirmer",
+    "close": "Fermer",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "errors": {
+    "empty_fields": "Tous les champs sont requis",
+    "user_already_exist": "Un utilisateur avec cet e-mail existe déjà",
+    "short_password": "Le mot de passe est trop court",
+    "invalid_credentials": "E-mail ou mot de passe incorrect",
+    "not_authenticated": "Vous devez être connecté",
+    "task_not_found": "Tâche introuvable",
+    "empty_title": "Le titre ne peut pas être vide",
+    "invalid_status": "Statut invalide",
+    "creating_task": "Erreur lors de la création de la tâche",
+    "updating_task": "Erreur lors de la modification de la tâche",
+    "deleting_task": "Erreur lors de la suppression de la tâche",
+    "fetching_tasks": "Erreur lors du chargement des tâches",
+    "network_error": "Erreur réseau, veuillez réessayer",
+    "unknown_error": "Erreur inconnue"
+  },
+  "success":{
+    "task_created": "Tâche créée avec succès",
+    "task_updated": "Tâche mise à jour avec succès",
+    "task_deleted": "Tâche supprimée avec succès",
+    "logged_in": "Connecté avec succès",
+    "registered": "Inscription réussie",
+    "logged_out": "Déconnecté avec succès"
+  }
+}

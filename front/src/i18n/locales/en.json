@@ -1,0 +1,175 @@
+{
+  "navigation": {
+    "sidebar": {
+      "home": "Home",
+      "tasks": "Tasks",
+      "documentation": "Docs",
+      "archive": "Archive"
+    },
+    "header": {
+      "tooltip": "Account settings",
+      "profile": "Profile",
+      "settings": "Settings",
+      "logout": "Logout",
+      "login": "Login",
+      "register": "Register",
+      "account": "Account"
+    }
+  },
+  "auth": {
+    "email": "Email address",
+    "emailPlaceholder": "example@email.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "login": {
+      "title": "Sign in",
+      "loginButton": "Sign in",
+      "loggingIn": "Signing in...",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "Don't have an account?",
+      "loginError": "Login error",
+      "emailRequired": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "passwordRequired": "Password is required",
+      "passwordTooShort": "Password must be at least 6 characters"
+    },
+    "register": {
+      "title": "Create an account",
+      "username": "Username",
+      "usernamePlaceholder": "Your name",
+      "password": "Password",
+      "passwordPlaceholder": "At least 8 characters",
+      "confirmPassword": "Confirm password",
+      "confirmPasswordPlaceholder": "Retype your password",
+      "registerButton": "Sign up",
+      "registering": "Signing up...",
+      "alreadyHaveAccount": "Already have an account?",
+      "registerError": "Registration error",
+      "usernameRequired": "Username is required",
+      "usernameTooShort": "Username must be at least 3 characters",
+      "usernameTooLong": "Username cannot exceed 30 characters",
+      "usernameInvalid": "Username can only contain letters and numbers",
+      "emailRequired": "Email is required",
+      "invalidEmail": "Invalid email address",
+      "passwordRequired": "Password is required",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "passwordWeak": "Password must contain at least one uppercase letter, one lowercase letter, and one number",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordMismatch": "Passwords do not match"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "My tasks",
+      "subtitle": "task | tasks",
+      "newTask": "New task"
+    },
+    "tasks": {
+      "columns": {
+        "todo": "To Do",
+        "inprogress": "In Progress",
+        "done": "Done"
+      },
+      "status": {
+        "todo": "To Do",
+        "pending": "In Progress",
+        "done": "Done"
+      },
+      "dates": {
+        "created": "Created on",
+        "completed": "Completed on"
+      },
+      "modal": {
+        "addTitle": "New task",
+        "editTitle": "Edit task",
+        "titleLabel": "Task title",
+        "titleRequired": "Title is required",
+        "descriptionLabel": "Description (optional)"
+      },
+      "dragDrop": {
+        "noTasks": "No tasks in",
+        "dropTask": "Drop task here",
+        "dropHere": "Drop here"
+      },
+      "confirmDelete": "Are you sure you want to delete this task?",
+      "stats": {
+        "title": "Statistics",
+        "total": "Total",
+        "todo": "To Do",
+        "pending": "In Progress",
+        "done": "Completed",
+        "completionRate": "Completion rate"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "language": {
+        "title": "Language",
+        "french": "French",
+        "english": "English",
+        "spanish": "Spanish",
+        "german": "German"
+      },
+      "theme": {
+        "title": "Theme",
+        "light": "Light",
+        "dark": "Dark"
+      },
+      "save": "Save",
+      "saved": "Settings saved successfully"
+    },
+    "profile": {
+      "title": "My profile",
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "changePassword": "Change password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmNewPassword": "Confirm new password",
+      "updateProfile": "Update profile",
+      "profileUpdated": "Profile updated successfully",
+      "passwordChanged": "Password changed successfully"
+    }
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "confirm": "Confirm",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "errors": {
+    "empty_fields": "All fields are required",
+    "user_already_exist": "A user with this email already exists",
+    "short_password": "Password is too short",
+    "invalid_credentials": "Invalid email or password",
+    "not_authenticated": "You must be logged in",
+    "task_not_found": "Task not found",
+    "empty_title": "Title cannot be empty",
+    "invalid_status": "Invalid status",
+    "creating_task": "Error creating task",
+    "updating_task": "Error updating task",
+    "deleting_task": "Error deleting task",
+    "fetching_tasks": "Error loading tasks",
+    "network_error": "Network error, please try again",
+    "unknown_error": "Unknown error"
+  },
+  "success":{
+    "task_created": "Task created successfully",
+    "task_updated": "Task updated successfully",
+    "task_deleted": "Task deleted successfully",
+    "logged_in": "Logged in successfully",
+    "registered": "Registration successful",
+    "logged_out": "Logged out successfully"
+  }
+}
