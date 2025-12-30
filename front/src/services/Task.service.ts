@@ -49,7 +49,8 @@ export const taskService = {
     id: number,
     status: 'todo' | 'pending' | 'done'
   ): Promise<Task> => {
-    return taskService.update(id, { status });
+    const task = await taskService.getById(id);
+    return taskService.update(id, { ...task, status });
   },
 
   markAsDone: async (id: number): Promise<Task> => {

@@ -41,7 +41,6 @@ const TaskModal = ({
   const handleTypeClick = (type: TaskType) => (event: React.MouseEvent) => {
     event.preventDefault();
     event.stopPropagation();
-    console.log('Type clicked:', type, 'Current type:', taskType);
     setTaskType(type);
   };
 
@@ -73,7 +72,7 @@ const TaskModal = ({
           variant="outlined"
           value={taskTitle}
           onChange={(e) => setTaskTitle(e.target.value)}
-          onKeyPress={(e) => {
+          onKeyDown={(e) => {
             if (e.key === "Enter" && !e.shiftKey) {
               e.preventDefault();
               onSave(taskTitle, taskType, taskDescription);

@@ -77,9 +77,9 @@ export const UserProvider = ({ children }: UserProviderProps) => {
     } finally {
       setUser(null);
       setIsAuthenticated(false);
-    navigate('/auth/login');
+      navigate('/auth/login');
     }
-  }, []);
+  }, [navigate]);
 
   const refreshUser = useCallback(async () => {
     try {

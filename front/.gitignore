@@ -28,3 +28,4 @@ dist-ssr
 node_modules/
 public/
 package-lock.json
+.claude

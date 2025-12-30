@@ -12,7 +12,6 @@ import {
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import { useState, type MouseEvent } from "react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useThemeColors, useThemeMode } from "../ThemeModeContext";
 import { useUser } from "../../context/userContext"; // <-- ajouté
@@ -118,32 +117,34 @@ const Header = () => {
         open={open}
         onClose={handleClose}
         onClick={handleClose}
-        PaperProps={{
-          elevation: 0,
-          sx: {
-            overflow: "visible",
-            filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
-            mt: 1.5,
-            minWidth: 180,
-            backgroundColor: colors.background.paper,
-            color: colors.text.primary,
-            "& .MuiAvatar-root": {
-              width: 32,
-              height: 32,
-              ml: -0.5,
-              mr: 1,
-            },
-            "&::before": {
-              content: '""',
-              display: "block",
-              position: "absolute",
-              top: 0,
-              right: 14,
-              width: 10,
-              height: 10,
-              bgcolor: colors.background.paper,
-              transform: "translateY(-50%) rotate(45deg)",
-              zIndex: 0,
+        slotProps={{
+          paper: {
+            elevation: 0,
+            sx: {
+              overflow: "visible",
+              filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+              mt: 1.5,
+              minWidth: 180,
+              backgroundColor: colors.background.paper,
+              color: colors.text.primary,
+              "& .MuiAvatar-root": {
+                width: 32,
+                height: 32,
+                ml: -0.5,
+                mr: 1,
+              },
+              "&::before": {
+                content: '""',
+                display: "block",
+                position: "absolute",
+                top: 0,
+                right: 14,
+                width: 10,
+                height: 10,
+                bgcolor: colors.background.paper,
+                transform: "translateY(-50%) rotate(45deg)",
+                zIndex: 0,
+              },
             },
           },
         }}
@@ -152,14 +153,10 @@ const Header = () => {
       >
         <MenuItem
           id="menu_profile"
-          component={Link}
-          to="/account"
+          disabled
           sx={{
-            color: colors.text.primary,
-            "&:hover": {
-              color: colors.primary,
-              backgroundColor: "transparent",
-            },
+            color: colors.text.tertiary,
+            opacity: 0.6,
           }}
         >
           <Avatar /> {t('navigation.header.profile')}
@@ -169,18 +166,13 @@ const Header = () => {
 
         <MenuItem
           id="menu_settings"
-          onClick={async () => {
-            handleClose();
-          }}
+          disabled
           sx={{
-            color: colors.text.primary,
-            "&:hover": {
-              color: colors.primary,
-              backgroundColor: "transparent",
-            },
+            color: colors.text.tertiary,
+            opacity: 0.6,
           }}
         >
-          <ListItemIcon sx={{ color: colors.icon }}>
+          <ListItemIcon sx={{ color: colors.text.tertiary }}>
             <Settings fontSize="small" />
           </ListItemIcon>
           {t('navigation.header.settings')}

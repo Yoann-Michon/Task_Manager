@@ -12,8 +12,6 @@ import { UserProvider } from "./context/userContext";
 
 const Login = lazy(() => import("./pages/Authpage"));
 const Home = lazy(() => import("./pages/Home"));
-//const Account = lazy(() => import("./pages/Account"));
-//const Settings = lazy(() => import("./pages/Settings"));
 
 const PrivateRoute = () => {
   const [authChecked, setAuthChecked] = useState<boolean | null>(null);
@@ -49,8 +47,6 @@ function App() {
           <Route element={<PrivateRoute />}>
             <Route element={<Layout />}>
               <Route path="/home" element={<Home />} />
-              {/*    <Route path="/account" element={<Account />} />*/}
-              {/*    <Route path="/settings" element={<Settings />} />*/}
             </Route>
           </Route>
         </Routes>

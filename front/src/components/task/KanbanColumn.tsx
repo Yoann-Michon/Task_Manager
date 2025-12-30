@@ -56,7 +56,9 @@ const KanbanColumn = ({
             ref={dropRef}
             sx={{
                 flex: 1,
-                height: '100%',
+                minWidth: 0,
+                display: 'flex',
+                flexDirection: 'column',
                 mx: 1,
             }}
         >
@@ -64,7 +66,10 @@ const KanbanColumn = ({
                 elevation={2}
                 sx={{
                     p: 2,
-                    height: '100%',
+                    flex: 1,
+                    minHeight: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
                     backgroundColor: colors.background.paper,
                     border: `2px solid ${isOver && canDrop ? columnInfo.color : 'transparent'}`,
                     borderRadius: 3,
@@ -135,7 +140,7 @@ const KanbanColumn = ({
                         </Typography>
                     </Box>
                 ) : (
-                    <Box sx={{ maxHeight: '100%', overflowY: 'auto', pr: 1 }}>
+                    <Box sx={{ flex: 1, minHeight: 0, overflowY: 'auto', pr: 1 }}>
                         {column.tasks.map((task) => (
                             <TaskItem
                                 key={task.id}

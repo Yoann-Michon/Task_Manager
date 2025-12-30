@@ -35,32 +35,30 @@ const Home = () => {
 
     const loadTasks = async () => {
         setLoading(true);
-        setTimeout(async () => {
-            try {
-                const tasks = await taskService.getAll();
-                setColumns([
-                    { 
-                        id: 'todo', 
-                        title: t('pages.tasks.columns.todo'), 
-                        tasks: tasks.filter(task => task.status === 'todo') 
-                    },
-                    { 
-                        id: 'pending', 
-                        title: t('pages.tasks.columns.inprogress'), 
-                        tasks: tasks.filter(task => task.status === 'pending') 
-                    },
-                    { 
-                        id: 'done', 
-                        title: t('pages.tasks.columns.done'), 
-                        tasks: tasks.filter(task => task.status === 'done') 
-                    }
-                ]);
-            } catch (error) {
-                console.error('Erreur lors du chargement des tâches:', error);
-            } finally {
-                setLoading(false);
-            }
-        }, 3000);
+        try {
+            const tasks = await taskService.getAll();
+            setColumns([
+                {
+                    id: 'todo',
+                    title: t('pages.tasks.columns.todo'),
+                    tasks: tasks.filter(task => task.status === 'todo')
+                },
+                {
+                    id: 'pending',
+                    title: t('pages.tasks.columns.inprogress'),
+                    tasks: tasks.filter(task => task.status === 'pending')
+                },
+                {
+                    id: 'done',
+                    title: t('pages.tasks.columns.done'),
+                    tasks: tasks.filter(task => task.status === 'done')
+                }
+            ]);
+        } catch (error) {
+            console.error('Erreur lors du chargement des tâches:', error);
+        } finally {
+            setLoading(false);
+        }
     };
 
     useEffect(() => {
@@ -108,8 +106,6 @@ const Home = () => {
             });
 
             await taskService.changeStatus(taskId, newStatus);
-            
-            console.log(`Tâche ${taskId} déplacée vers ${newStatus}`);
         } catch (error) {
             console.error('Erreur lors du déplacement:', error);
             loadTasks();
@@ -215,7 +211,7 @@ const Home = () => {
 
     return (
         <DndProvider backend={HTML5Backend}>
-            <Box sx={{ p: 3, height: '100%', backgroundColor: colors.background.default }}>
+            <Box sx={{ p: 3, height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: colors.background.default }}>
                 <Box sx={{ 
                     display: 'flex', 
                     justifyContent: 'space-between', 
@@ -261,11 +257,12 @@ const Home = () => {
                     </Button>
                 </Box>
 
-                <Box sx={{ 
-                    display: 'flex', 
-                    gap: 2, 
-                    height: '100%',
-                    overflow: 'auto'
+                <Box sx={{
+                    display: 'flex',
+                    gap: 2,
+                    flex: 1,
+                    minHeight: 0,
+                    overflow: 'hidden'
                 }}>
                     {columns.map((column) => (
                         <KanbanColumn
